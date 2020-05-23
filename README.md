@@ -1,8 +1,8 @@
 # 2 Minutes Du Peuple Discord Bot
-##Concept
+## Concept
 Avoir tout (du moins ceux que j'ai pu trouver) les minutes du peuple disponible sur un serveur discord
 
-##Inviter sur votre serveur
+## Inviter sur votre serveur
 Vous pouvez utiliser ce lien [Inviter](https://discord.com/api/oauth2/authorize?client_id=569517089845542912&permissions=104188992&scope=bot)
 cela évite de le host vous même
 
@@ -13,7 +13,7 @@ pour démarrer le bot il faut avoir java, un token de bot discord et évidement 
 java -jar <jarfile>.jar <token> <dossier avec les stech>
 ```
 
-##Les commands du bot
+## Les commands du bot
 **Bot Prefix:** &2
 
 _<> : argument obligatoire_
@@ -27,10 +27,10 @@ _[] : argument optionnel_
 &2skip : passe au suivant
 &2stop : arrête la lecture et fait quitter le bot du channel
 ```
-##Bug connus
+## Bug connus
 Impossibilité de lister le dossier 20 (divers) dû aux limitations de discord
 
-##Futures Update
+## Futures Update
 * fix du bug pour le dossier 20 (divers)
 * ajout dun system play random
 * auto déconnexion
