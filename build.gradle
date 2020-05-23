@@ -1,0 +1,37 @@
+plugins {
+    id'java'
+    id'application'
+    id'com.github.johnrengelman.shadow' version '4.0.4'
+}
+
+group 'io.msterhuj'
+version '1.0'
+
+mainClassName = 'io.msterhuj.minutedupeuple.Main'
+sourceCompatibility = 1.8
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.1.1_110'
+    compile "org.slf4j:slf4j-simple:1.7.9"
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    implementation 'com.sedmelluq:lavaplayer:1.3.34'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+
+
+
+
+
+
+
+
+
