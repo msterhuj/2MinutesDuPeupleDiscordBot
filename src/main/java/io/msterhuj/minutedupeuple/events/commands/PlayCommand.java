@@ -47,7 +47,7 @@ public class PlayCommand {
                     EmbedBuilder builder = new EmbedBuilder();
 
                     builder.setColor(Color.RED);
-                    builder.setTitle("Une Erreur est survenue :confused:");
+                    builder.setTitle("Une erreur est survenue :confused:");
                     builder.setDescription("Je n'ai rien trouvé...");
                     builder.setFooter(event.getAuthor().getName(), event.getAuthor().getAvatarUrl());
                     builder.setTimestamp(Instant.now());

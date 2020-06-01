@@ -48,7 +48,7 @@ public class ListCommand {
             EmbedBuilder builder = new EmbedBuilder();
 
             builder.setColor(Color.RED);
-            builder.setTitle("Une Erreur est surenue :confused:");
+            builder.setTitle("Une erreur est survenue :confused:");
             builder.setDescription("L'Index : " + folderId + " n'est pas valide");
             builder.setFooter(event.getAuthor().getName(), event.getAuthor().getAvatarUrl());
             builder.setTimestamp(Instant.now());
