@@ -57,13 +57,13 @@ public class MusicManager extends ListenerAdapter {
         playerManager.loadItemOrdered(musicManager, trackUrl.getAbsolutePath(), new AudioLoadResultHandler() {
             @Override
             public void playlistLoaded(AudioPlaylist playlist) { // created playlist
-                AudioTrack firstTrack = playlist.getSelectedTrack();
+                /*AudioTrack firstTrack = playlist.getSelectedTrack();
 
                 if (firstTrack == null) {
                     firstTrack = playlist.getTracks().get(0);
                 }
 
-                play(channel.getGuild(), musicManager, firstTrack, voiceChannel);
+                play(channel.getGuild(), musicManager, firstTrack, voiceChannel);*/
             }
 
             @Override
@@ -84,6 +84,12 @@ public class MusicManager extends ListenerAdapter {
     public void play(Guild guild, GuildMusicManager musicManager, AudioTrack track, VoiceChannel voiceChannel) {
         connectToVoiceChannel(guild.getAudioManager(), voiceChannel);
         musicManager.scheduler.queue(track);
+    }
+
+    public void purge(Guild guild) { // todo rewrite this function !
+        try {
+            getGuildAudioPlayer(guild).scheduler.nextTrack();
+        } catch (Exception ignored) {}
     }
 
     public void stop(Guild guild) {

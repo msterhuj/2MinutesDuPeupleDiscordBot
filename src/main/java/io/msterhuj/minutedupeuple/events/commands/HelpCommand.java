@@ -12,7 +12,7 @@ public class HelpCommand {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setColor(Color.decode("#2E86C1"));
         builder.setTitle("Liste des commandes");
-        builder.setDescription("");
+        builder.setDescription("Bugs ? https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/issues");
         builder.setFooter(event.getAuthor().getName(), event.getAuthor().getAvatarUrl());
         builder.setTimestamp(Instant.now());
         builder.addField("Liste des sketchs","" +
@@ -20,6 +20,7 @@ public class HelpCommand {
         builder.addField("Ecouter", "" +
                 "&2play [*dossier*] [*sketch/all*] -> remplacer le dossier pas son numéro et de même pour le sketch ou mettre all pour écouter toute la catégorie\n" +
                 "&2skip -> passe au sketch suivant\n" +
+                "&2purge -> nettoyer la liste\n" +
                 "&2stop -> arrête les sketchs en cours et fait partir le bot", false);
         event.getChannel().sendMessage(builder.build()).queue();
     }

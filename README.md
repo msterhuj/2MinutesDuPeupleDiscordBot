@@ -7,7 +7,7 @@ Vous pouvez utiliser ce lien [Inviter](https://discord.com/api/oauth2/authorize?
 cela évite de le host vous même
 
 ## Self host
-Vous pouvez héberger le bot par vous même. Dans ce cas, il faut aller dans l'onglet [releases](https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/releases) pour téléchager la dernière version et télécharger les sketchs ici [Sketches](https://cdn.netbytes.space/2MinutesDuPeuple.rar)
+Vous pouvez héberger le bot par vous même. Dans ce cas, il faut ~~aller dans l'onglet [releases](https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/releases) pour téléchager la dernière version~~ le compiler vous-même `gradlew tasks build` et télécharger les sketchs ici [Sketches](https://cdn.netbytes.space/2MinutesDuPeuple.rar)
 pour démarrer le bot il faut avoir java, un token de bot discord et évidemment les sketchs et taper la commande suivante
 ```shell script
 java -jar <jarfile>.jar <token> <dossier avec les stechs>
@@ -25,6 +25,7 @@ _[] : argument optionnel_
 &2list [num] : passer en argument le numéro du dossier pour avoir les sketchs de la catégorie
 &2play <dossier> [num/all] : donner le dossier suivi du num pour écouter un seul ou all pour écouter tout la catégorie
 &2skip : passe au suivant
+&2purge : nettoyer la liste
 &2stop : arrête la lecture et fait quitter le bot du channel
 ```
 ## Bug connus
@@ -32,7 +33,8 @@ Impossibilité de lister le dossier 20 (divers) dû aux limitations de discord
 
 ## Futures Update
 * fix du bug pour le dossier 20 (divers)
-* ajout dun system play random
+* ajout d'un system play random
+* ajout d'une commands &2queue
 * auto déconnexion
 * plus d'informations lors du &2skip
 * auto téléchargement des sketchs

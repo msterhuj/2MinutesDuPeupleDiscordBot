@@ -29,6 +29,9 @@ public class GuildMessageReceived extends ListenerAdapter {
                 case "skip":
                     new SkipCommands(event, args);
                     break;
+                case "purge":
+                    new PurgeCommands(event, args);
+                    break;
                 case "stop":
                     new StopCommand(event, args);
                     break;

@@ -40,8 +40,7 @@ public class PlayCommand {
 
                         Member member = event.getMember();
                         VoiceChannel voiceChannel = member.getVoiceState().getChannel();
-                        MusicManager musicManager = Main.musicManager;
-                        musicManager.loadAndPlay(event.getChannel(), sketch.getSketch(), voiceChannel);
+                        Main.musicManager.loadAndPlay(event.getChannel(), sketch.getSketch(), voiceChannel);
                     }
                 } catch (NoSuchElementException e) {
                     EmbedBuilder builder = new EmbedBuilder();
