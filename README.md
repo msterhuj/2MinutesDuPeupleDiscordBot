@@ -7,7 +7,7 @@ Vous pouvez utiliser ce lien [Inviter](https://discord.com/api/oauth2/authorize?
 cela évite de le host vous même
 
 ## Self host
-Vous pouvez héberger le bot par vous même. Dans ce cas, il faut ~~aller dans l'onglet [releases](https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/releases) pour téléchager la dernière version~~ le compiler vous-même `gradlew tasks build` et télécharger les sketchs ici [Sketches](https://cdn.netbytes.space/2MinutesDuPeuple.rar)
+Vous pouvez héberger le bot par vous même. Dans ce cas, il faut ~~aller dans l'onglet [releases](https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/releases) pour téléchager la dernière version~~ le compiler vous-même `gradlew tasks build` et télécharger les sketchs ici [Sketches](https://github.com/msterhuj/2MinutesDuPeupleDiscordBot/releases/download/v1/2MinutesDuPeuple.rar)
 pour démarrer le bot il faut avoir java, un token de bot discord et évidemment les sketchs et taper la commande suivante
 ```shell script
 java -jar <jarfile>.jar <token> <dossier avec les stechs>
